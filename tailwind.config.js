@@ -12,6 +12,10 @@ module.exports = {
         accent: '#45B7AF',
         dark: '#2C3E50',
         light: '#ECF0F1'
+      },
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        display: ['Comfortaa', 'cursive']
       }
     },
   },

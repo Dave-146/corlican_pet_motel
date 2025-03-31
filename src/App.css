@@ -4,10 +4,10 @@
 
 @layer base {
   body {
-    @apply text-gray-900 m-0 p-0;
+    @apply text-gray-900 m-0 p-0 font-sans;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    @apply font-display font-bold;
   }
 }
 
@@ -16,16 +16,16 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-md hover:bg-secondary transition-colors duration-200 inline-block;
+    @apply bg-primary text-white px-6 py-3 rounded-md hover:bg-secondary transition-colors duration-200 inline-block font-sans;
   }
   .btn-secondary {
-    @apply bg-secondary text-primary px-6 py-3 rounded-md hover:bg-primary hover:text-white transition-colors duration-200 inline-block;
+    @apply bg-secondary text-primary px-6 py-3 rounded-md hover:bg-primary hover:text-white transition-colors duration-200 inline-block font-sans;
   }
   .section-title {
-    @apply text-4xl font-display text-primary mb-4;
+    @apply text-4xl font-display font-bold text-primary mb-4;
   }
   .section-subtitle {
-    @apply text-xl text-gray-600 max-w-2xl mx-auto;
+    @apply text-xl font-sans text-gray-600 max-w-2xl mx-auto;
   }
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
