@@ -53,8 +53,8 @@ export default function Features() {
     <section id="features" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-red-600 mb-4">Why Choose Us</h2>
-          <p className="text-xl text-gray-600">
+          <h2 className="text-4xl font-display font-bold text-red-600 mb-4">Why Choose Us</h2>
+          <p className="text-xl font-sans text-gray-600">
             Experience premium pet care services tailored to your furry friend's needs
           </p>
         </div>
@@ -76,8 +76,8 @@ export default function Features() {
                 <div className="mb-4">
                   <feature.icon className="text-red-600 text-4xl" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <h3 className="text-xl font-display font-bold text-gray-900 mb-3">{feature.title}</h3>
+                <p className="text-gray-600 font-sans">{feature.description}</p>
               </div>
             </motion.div>
           ))}
