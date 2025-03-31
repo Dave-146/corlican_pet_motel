@@ -38,10 +38,6 @@
   }
 }
 
-.font-display {
-  font-family: 'Playfair Display', serif;
-}
-
 /* Responsive utilities */
 @media (min-width: 640px) {
   .container {
