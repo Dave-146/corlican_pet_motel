@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/corlican_pet_motel/static/css/main.53957af7.css",
+    "main.js": "/corlican_pet_motel/static/js/main.61ca1182.js",
+    "index.html": "/corlican_pet_motel/index.html",
+    "main.53957af7.css.map": "/corlican_pet_motel/static/css/main.53957af7.css.map",
+    "main.61ca1182.js.map": "/corlican_pet_motel/static/js/main.61ca1182.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53957af7.css",
+    "static/js/main.61ca1182.js"
+  ]
+}
