@@ -30,13 +30,6 @@ export default function Hero() {
     return () => clearInterval(timer);
   }, []);
 
-  const scrollToContact = () => {
-    const contactSection = document.querySelector('#contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="relative h-[100vh] w-full overflow-hidden bg-black">
       {/* Image Carousel */}
