@@ -7,16 +7,16 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Slogan */}
-          <div className="text-center md:text-left flex flex-col items-center md:items-start">
-            <div className="flex flex-col items-center mb-4">
+          <div className="flex flex-col items-center md:items-start">
+            <div className="flex flex-col items-center md:items-start mb-4">
               <img 
                 src={logo} 
                 alt="Corlican Pet Motel" 
                 className="h-16 w-auto mb-4"
               />
-              <h3 className="text-2xl font-display font-bold text-white">Corlican Pet Motel</h3>
+              <h3 className="text-2xl font-display font-bold text-white text-center md:text-left">Corlican Pet Motel</h3>
             </div>
-            <p className="text-light text-center md:text-left w-full">Your pets home away from home</p>
+            <p className="text-light text-center md:text-left">Your pets home away from home</p>
           </div>
 
           {/* Quick Links */}
