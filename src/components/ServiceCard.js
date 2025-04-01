@@ -61,7 +61,7 @@ export default function ServiceCard({
             ))}
           </ul>
           <button 
-            className="text-secondary text-white px-6 py-3 rounded-md hover:bg-primary transition-colors duration-200 w-full text-center block font-sans"
+            className="bg-primary text-white px-6 py-3 rounded-md hover:bg-secondary transition-colors duration-200 w-full text-center block font-sans"
             onClick={(e) => {
               e.stopPropagation();
               setIsExpanded(true);
