@@ -1,4 +1,5 @@
 import { FaFacebook } from 'react-icons/fa';
+import logo from '../assets/logo.svg';
 
 export default function Footer() {
   return (
@@ -8,7 +9,12 @@ export default function Footer() {
           {/* Logo and Slogan */}
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-display font-bold text-white mb-4">Corlican Pet Motel</h3>
-            <p className="text-light">Where your pets feel at home</p>
+            <p className="text-light mb-4">Where your pets feel at home</p>
+            <img 
+              src={logo} 
+              alt="Corlican Pet Motel" 
+              className="h-16 w-auto mx-auto md:mx-0 filter brightness-0 invert"
+            />
           </div>
 
           {/* Contact Info */}

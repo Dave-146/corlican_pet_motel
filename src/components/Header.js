@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../assets/logo.svg';
 
 const navigation = [
   { name: 'Services', href: '#services' },
@@ -46,9 +47,13 @@ export default function Header() {
               <div className="flex-shrink-0">
                 <button
                   onClick={scrollToTop}
-                  className="text-2xl font-display text-primary hover:text-secondary transition-colors"
+                  className="flex items-center"
                 >
-                  Corlican Pet Motel
+                  <img 
+                    src={logo} 
+                    alt="Corlican Pet Motel" 
+                    className="h-10 w-auto hover:opacity-80 transition-opacity"
+                  />
                 </button>
               </div>
 

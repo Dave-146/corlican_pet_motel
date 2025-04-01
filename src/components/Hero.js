@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '../assets/logo.svg';
 
 const images = [
   {
@@ -57,6 +58,18 @@ export default function Hero() {
         {/* Content Overlay */}
         <div className="absolute inset-0 flex items-center justify-center text-center text-white px-4">
           <div className="max-w-4xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="mb-8"
+            >
+              <img 
+                src={logo} 
+                alt="Corlican Pet Motel" 
+                className="h-32 md:h-40 w-auto mx-auto"
+              />
+            </motion.div>
             <motion.h1
               key={`title-${currentImageIndex}`}
               initial={{ opacity: 0, y: 20 }}
