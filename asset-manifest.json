@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/corlican_pet_motel/static/css/main.623db347.css",
-    "main.js": "/corlican_pet_motel/static/js/main.3a99ffa6.js",
+    "main.css": "/corlican_pet_motel/static/css/main.a4b6ac89.css",
+    "main.js": "/corlican_pet_motel/static/js/main.6c1f6d31.js",
     "index.html": "/corlican_pet_motel/index.html",
-    "main.623db347.css.map": "/corlican_pet_motel/static/css/main.623db347.css.map",
-    "main.3a99ffa6.js.map": "/corlican_pet_motel/static/js/main.3a99ffa6.js.map"
+    "main.a4b6ac89.css.map": "/corlican_pet_motel/static/css/main.a4b6ac89.css.map",
+    "main.6c1f6d31.js.map": "/corlican_pet_motel/static/js/main.6c1f6d31.js.map"
   },
   "entrypoints": [
-    "static/css/main.623db347.css",
-    "static/js/main.3a99ffa6.js"
+    "static/css/main.a4b6ac89.css",
+    "static/js/main.6c1f6d31.js"
   ]
 }
