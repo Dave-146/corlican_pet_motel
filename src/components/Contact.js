@@ -86,7 +86,7 @@ const Contact = () => {
               <div>
                 <h4 className="font-display text-lg mb-1">Phone</h4>
                 <p className="text-gray-600">Assumpta: +353 (86) 223 2100</p>
-                <p className="text-gray-600">Mary:+353 (86) 355 1132</p>
+                <p className="text-gray-600">Mary: +353 (86) 355 1132</p>
                 <p className="text-gray-600">Available 9am - 7pm daily</p>
               </div>
             </div>
