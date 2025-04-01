@@ -13,7 +13,7 @@ export default function Footer() {
             <img 
               src={logo} 
               alt="Corlican Pet Motel" 
-              className="h-16 w-auto mx-auto md:mx-0 filter brightness-0 invert"
+              className="h-16 w-auto mx-auto md:mx-0"
             />
           </div>
 

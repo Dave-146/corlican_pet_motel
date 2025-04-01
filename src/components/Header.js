@@ -52,7 +52,7 @@ export default function Header() {
                   <img 
                     src={logo} 
                     alt="Corlican Pet Motel" 
-                    className="h-10 w-auto hover:opacity-80 transition-opacity"
+                    className="h-12 w-auto hover:opacity-80 transition-opacity"
                   />
                 </button>
               </div>

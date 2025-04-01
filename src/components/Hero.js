@@ -67,7 +67,7 @@ export default function Hero() {
               <img 
                 src={logo} 
                 alt="Corlican Pet Motel" 
-                className="h-32 md:h-40 w-auto mx-auto"
+                className="h-40 md:h-56 w-auto mx-auto"
               />
             </motion.div>
             <motion.h1
