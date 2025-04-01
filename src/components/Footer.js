@@ -5,39 +5,22 @@ export default function Footer() {
   return (
     <footer className="bg-dark text-white py-12" role="contentinfo">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Slogan */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-display font-bold text-white mb-4">Corlican Pet Motel</h3>
-            <p className="text-light mb-4">Where your pets feel at home</p>
-            <img 
-              src={logo} 
-              alt="Corlican Pet Motel" 
-              className="h-16 w-auto mx-auto md:mx-0"
-            />
+            <div className="flex flex-col items-center md:items-start mb-4">
+              <img 
+                src={logo} 
+                alt="Corlican Pet Motel" 
+                className="h-16 w-auto mb-4"
+              />
+              <h3 className="text-2xl font-display font-bold text-white">Corlican Pet Motel</h3>
+            </div>
+            <p className="text-light">Your pets home away from home</p>
           </div>
 
-          {/* Contact Info */}
-          {/* <div>
-            <h4 className="text-lg font-display font-bold text-white mb-4">Contact Us</h4>
-            <address className="not-italic">
-              <p className="text-light mb-2">123 Pet Haven Lane</p>
-              <p className="text-light mb-2">Brisbane, QLD 4000</p>
-              <p className="text-light mb-2">
-                <a href="tel:0712345678" className="hover:text-primary transition-colors">
-                  Phone: (07) 1234 5678
-                </a>
-              </p>
-              <p className="text-light">
-                <a href="mailto:info@corlicanpetmotel.com.au" className="hover:text-primary transition-colors">
-                  Email: info@corlicanpetmotel.com.au
-                </a>
-              </p>
-            </address>
-          </div> */}
-
           {/* Quick Links */}
-          <nav aria-label="Footer Navigation">
+          <nav aria-label="Footer Navigation" className="text-center">
             <h4 className="text-lg font-display font-bold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="#about" className="text-light hover:text-primary transition-colors">About Us</a></li>
@@ -48,9 +31,9 @@ export default function Footer() {
           </nav>
 
           {/* Social Links */}
-          <div>
+          <div className="text-center">
             <h4 className="text-lg font-display font-bold text-white mb-4">Follow Us</h4>
-            <div className="flex justify-center md:justify-start space-x-4">
+            <div className="flex justify-center space-x-4">
               <a 
                 href="https://facebook.com" 
                 className="text-light hover:text-primary transition-colors text-2xl"
