@@ -4,10 +4,14 @@
 
 @layer base {
   body {
-    @apply text-gray-900 m-0 p-0 font-sans;
+    @apply text-dark m-0 p-0 font-sans bg-light;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-bold;
+    @apply font-display font-bold text-dark;
+  }
+  /* Ensure link accessibility */
+  a:focus {
+    @apply outline-2 outline-offset-2 outline-primary;
   }
 }
 
@@ -16,25 +20,34 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-md hover:bg-secondary transition-colors duration-200 inline-block font-sans;
+    @apply bg-primary text-white px-6 py-3 rounded-md hover:bg-primary-dark focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors duration-200 inline-block font-sans font-medium;
   }
   .btn-secondary {
-    @apply bg-secondary text-primary px-6 py-3 rounded-md hover:bg-primary hover:text-white transition-colors duration-200 inline-block font-sans;
+    @apply bg-dark text-white px-6 py-3 rounded-md hover:bg-gray-dark focus:ring-2 focus:ring-dark focus:ring-offset-2 transition-colors duration-200 inline-block font-sans font-medium;
   }
   .section-title {
-    @apply text-4xl font-display font-bold text-primary mb-4;
+    @apply text-4xl font-display font-bold text-dark mb-4;
   }
   .section-subtitle {
-    @apply text-xl font-sans text-gray-600 max-w-2xl mx-auto;
+    @apply text-xl font-sans text-gray-dark max-w-2xl mx-auto;
   }
+  /* Ensure text over images has good contrast */
   .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  /* Skip to main content for keyboard users */
+  .skip-to-content {
+    @apply sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-white focus:text-dark focus:p-4;
   }
 }
 
 @layer utilities {
-  .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  .text-shadow-sm {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  /* High contrast focus indicators */
+  .focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
   }
 }
 
@@ -97,7 +110,7 @@
 }
 
 .bg-secondary {
-  background-color: #C0D9DA;
+  background-color: #8d99ae;
 }
 
 .bg-gray-50 {
@@ -114,11 +127,11 @@
 }
 
 .text-gray-600 {
-  color: #4B5563;
+  color: #8d99ae;
 }
 
 .text-gray-900 {
-  color: #1A202C;
+  color: #2b2d42;
 }
 
 .text-white {

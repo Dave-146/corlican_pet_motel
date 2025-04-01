@@ -7,11 +7,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#FF6B6B',
-        secondary: '#4ECDC4',
-        accent: '#45B7AF',
-        dark: '#2C3E50',
-        light: '#ECF0F1'
+        primary: '#D60D0D',
+        secondary: '#8D99AE',
+        dark: '#2B2D42',
+        light: '#EDF2F4',
+        'gray-custom': '#8D99AE',
+        'gray-dark': '#4A4E69',
+        'primary-dark': '#B30B0B'
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],

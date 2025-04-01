@@ -50,11 +50,11 @@ const itemVariants = {
 
 export default function Features() {
   return (
-    <section id="features" className="py-16 bg-white">
+    <section id="features" className="py-16 bg-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-display font-bold text-red-600 mb-4">Why Choose Us</h2>
-          <p className="text-xl font-sans text-gray-600">
+          <h2 className="text-4xl font-display font-bold text-primary mb-4">Why Choose Us</h2>
+          <p className="text-xl font-sans text-gray-custom">
             Experience premium pet care services tailored to your furry friend's needs
           </p>
         </div>
@@ -74,10 +74,10 @@ export default function Features() {
             >
               <div className="flex flex-col items-center">
                 <div className="mb-4">
-                  <feature.icon className="text-red-600 text-4xl" />
+                  <feature.icon className="text-primary text-4xl" />
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 font-sans">{feature.description}</p>
+                <h3 className="text-xl font-display font-bold text-dark mb-3">{feature.title}</h3>
+                <p className="text-gray-custom font-sans">{feature.description}</p>
               </div>
             </motion.div>
           ))}
