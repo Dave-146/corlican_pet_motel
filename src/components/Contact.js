@@ -85,8 +85,8 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-display text-lg mb-1">Phone</h4>
-                <p className="text-gray-600">+353 (86) 223 2100</p>
-                <p className="text-gray-600">+353 (86) 355 1132</p>
+                <p className="text-gray-600">Assumpta: +353 (86) 223 2100</p>
+                <p className="text-gray-600">Mary:+353 (86) 355 1132</p>
                 <p className="text-gray-600">Available 9am - 7pm daily</p>
               </div>
             </div>
@@ -108,7 +108,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="font-display text-lg mb-1">Location</h4>
-                <p className="text-gray-600">Killurin, Wexford</p>
+                <p className="text-gray-600">Corlican, Killurin,</p>
                 <p className="text-gray-600">Enniscorthy, Wexford</p>
                 <p className="text-gray-600">Y21 T6X5</p>
               </div>
