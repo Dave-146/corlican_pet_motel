@@ -32,6 +32,22 @@ export default function Header() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+    const element = document.querySelector(href);
+    if (element) {
+      const headerOffset = 80; // Account for fixed header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <AnimatePresence>
       {isVisible && (
@@ -63,6 +79,7 @@ export default function Header() {
                   <a
                     key={item.name}
                     href={item.href}
+                    onClick={(e) => handleNavClick(e, item.href)}
                     className={`text-sm font-medium transition-colors duration-200 px-4 py-2 rounded-md ${
                       item.highlight
                         ? 'text-white bg-primary hover:bg-secondary'
@@ -104,12 +121,12 @@ export default function Header() {
                     <a
                       key={item.name}
                       href={item.href}
+                      onClick={(e) => handleNavClick(e, item.href)}
                       className={`block px-4 py-2 text-base font-medium rounded-md transition-colors duration-200 ${
                         item.highlight
                           ? 'text-white bg-primary hover:bg-secondary'
                           : 'text-gray-700 hover:text-primary hover:bg-gray-50'
                       }`}
-                      onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
                     </a>

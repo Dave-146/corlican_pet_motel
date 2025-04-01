@@ -58,12 +58,12 @@ export default function Hero() {
         {/* Content Overlay */}
         <div className="absolute inset-0 flex items-center justify-center text-center text-white px-4">
           <div className="max-w-4xl w-full">
-            <div className="relative h-[400px] flex flex-col items-center justify-center">
+            <div className="relative h-[500px] flex flex-col items-center justify-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                className="absolute top-0"
+                className="absolute top-8"
               >
                 <img 
                   src={logo} 
@@ -77,7 +77,7 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 1, delay: 0.3 }}
-                className="text-4xl md:text-6xl font-display font-bold mb-6 text-white text-shadow absolute top-[45%]"
+                className="text-4xl md:text-6xl font-display font-bold mb-6 text-white text-shadow absolute top-[60%]"
               >
                 {images[currentImageIndex].caption}
               </motion.h1>
