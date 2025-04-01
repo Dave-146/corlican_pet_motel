@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Slogan */}
-          <div className="text-center md:text-left">
-            <div className="flex flex-col items-center md:items-start mb-4">
+          <div className="text-center md:text-left flex flex-col items-center md:items-start">
+            <div className="flex flex-col items-center mb-4 w-full">
               <img 
                 src={logo} 
                 alt="Corlican Pet Motel" 
