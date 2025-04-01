@@ -57,43 +57,46 @@ export default function Hero() {
 
         {/* Content Overlay */}
         <div className="absolute inset-0 flex items-center justify-center text-center text-white px-4">
-          <div className="max-w-4xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="mb-8"
-            >
-              <img 
-                src={logo} 
-                alt="Corlican Pet Motel" 
-                className="h-40 md:h-56 w-auto mx-auto"
-              />
-            </motion.div>
-            <motion.h1
-              key={`title-${currentImageIndex}`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              className="text-4xl md:text-6xl font-display font-bold mb-6 text-white text-shadow"
-            >
-              {images[currentImageIndex].caption}
-            </motion.h1>
-            <motion.p
-              key={`desc-${currentImageIndex}`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1, delay: 0.5 }}
-              className="text-xl md:text-2xl mb-8 font-sans text-white text-shadow"
-            >
-              Luxury boarding for your beloved pets in a safe and caring environment
-            </motion.p>
+          <div className="max-w-4xl w-full">
+            <div className="relative h-[400px] flex flex-col items-center justify-center">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                className="absolute top-0"
+              >
+                <img 
+                  src={logo} 
+                  alt="Corlican Pet Motel" 
+                  className="h-40 md:h-56 w-auto mx-auto"
+                />
+              </motion.div>
+              <motion.h1
+                key={`title-${currentImageIndex}`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1, delay: 0.3 }}
+                className="text-4xl md:text-6xl font-display font-bold mb-6 text-white text-shadow absolute top-[45%]"
+              >
+                {images[currentImageIndex].caption}
+              </motion.h1>
+              <motion.p
+                key={`desc-${currentImageIndex}`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                className="text-xl md:text-2xl mb-8 font-sans text-white text-shadow absolute bottom-0"
+              >
+                Luxury boarding for your beloved pets in a safe and caring environment
+              </motion.p>
+            </div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.7 }}
+              className="mt-8"
             >
               <a
                 href="#services"
