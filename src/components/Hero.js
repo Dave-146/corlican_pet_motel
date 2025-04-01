@@ -63,7 +63,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="text-4xl md:text-6xl font-display font-bold mb-6"
+              className="text-4xl md:text-6xl font-display font-bold mb-6 text-white text-shadow"
             >
               {images[currentImageIndex].caption}
             </motion.h1>
@@ -73,7 +73,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="text-xl md:text-2xl mb-8 font-sans"
+              className="text-xl md:text-2xl mb-8 font-sans text-white text-shadow"
             >
               Luxury boarding for your beloved pets in a safe and caring environment
             </motion.p>
