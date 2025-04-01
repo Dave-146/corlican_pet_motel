@@ -12,7 +12,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-display font-bold text-white mb-4">Contact Us</h4>
             <address className="not-italic">
               <p className="text-light mb-2">123 Pet Haven Lane</p>
@@ -28,7 +28,7 @@ export default function Footer() {
                 </a>
               </p>
             </address>
-          </div>
+          </div> */}
 
           {/* Quick Links */}
           <nav aria-label="Footer Navigation">
