@@ -1,30 +1,81 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef();
   const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const sendEmail = (e) => {
+  // Add initialization check
+  useEffect(() => {
+    // Log environment variables (without exposing sensitive data)
+    console.log('EmailJS Config Check:', {
+      hasServiceId: !!process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      hasTemplateId: !!process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      hasPublicKey: !!process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    });
+  }, []);
+
+  const sendEmail = async (e) => {
     e.preventDefault();
+    
+    if (isSubmitting) return;
+    
+    setIsSubmitting(true);
     setStatus('');
 
-    emailjs.sendForm(
-      'service_907t4a8',
-      'template_bydpvyf',
-      form.current,
-      '4PSJIVLdVusMig6Ba'
-    )
-    .then(
-      (result) => {
+    try {
+      console.log('Starting email submission...');
+      
+      // Get form data
+      const formData = new FormData(form.current);
+      const templateParams = {
+        user_name: formData.get('user_name'),
+        user_email: formData.get('user_email'),
+        message: formData.get('message'),
+      };
+
+      // Verify EmailJS configuration
+      if (!process.env.REACT_APP_EMAILJS_SERVICE_ID || 
+          !process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 
+          !process.env.REACT_APP_EMAILJS_PUBLIC_KEY) {
+        throw new Error('EmailJS configuration is missing');
+      }
+
+      console.log('Sending email with params:', {
+        ...templateParams,
+        serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      });
+
+      // Send email using send method
+      const result = await emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      );
+
+      console.log('EmailJS Response:', result);
+
+      if (result.text === 'OK') {
         setStatus('Message sent successfully!');
         form.current.reset();
-      },
-      (error) => {
-        setStatus('Failed to send message. Please try again.');
+      } else {
+        throw new Error('Failed to send message');
       }
-    );
+    } catch (error) {
+      console.error('Detailed EmailJS Error:', {
+        error: error.message,
+        code: error.code,
+        status: error.status,
+        text: error.text
+      });
+      setStatus('Failed to send message. Please try again or contact us directly at corlicanpetmotel@hotmail.com');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -104,6 +155,8 @@ const Contact = () => {
                   name="user_name"
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary"
                   required
+                  minLength={2}
+                  maxLength={50}
                 />
               </div>
               <div>
@@ -128,10 +181,24 @@ const Contact = () => {
                   rows={4}
                   className="flex-1 w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary resize-none"
                   required
+                  minLength={10}
+                  maxLength={1000}
                 />
               </div>
-              <button type="submit" className="btn-primary w-full">Send Message</button>
-              {status && <p className="mt-4 text-center">{status}</p>}
+              <button 
+                type="submit" 
+                className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+              </button>
+              {status && (
+                <p className={`mt-4 text-center ${
+                  status.includes('successfully') ? 'text-green-600' : 'text-red-600'
+                }`}>
+                  {status}
+                </p>
+              )}
             </form>
           </div>
         </div>
