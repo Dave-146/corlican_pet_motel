@@ -12,7 +12,7 @@ export default function Footer() {
               <img 
                 src={logo} 
                 alt="Corlican Pet Motel" 
-                className="h-16 w-auto mb-4"
+                className="h-24 w-auto mb-4"
               />
               <h3 className="text-2xl font-display font-bold text-white text-center">Corlican Pet Motel</h3>
             </div>
