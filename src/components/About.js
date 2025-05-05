@@ -90,13 +90,13 @@ export default function About() {
             <div className="absolute inset-0 flex items-center justify-between p-4">
               <button
                 onClick={prevImage}
-                className="btn-primary p-2 rounded-full"
+                className="bg-black/50 hover:bg-primary text-white p-2 rounded-full transition-colors focus:ring-2 focus:ring-white focus:ring-offset-2 focus:outline-none active:ring-2 active:ring-white active:ring-offset-2"
               >
                 <FaChevronLeft className="w-5 h-5" />
               </button>
               <button
                 onClick={nextImage}
-                className="btn-primary p-2 rounded-full"
+                className="bg-black/50 hover:bg-primary text-white p-2 rounded-full transition-colors focus:ring-2 focus:ring-white focus:ring-offset-2 focus:outline-none active:ring-2 active:ring-white active:ring-offset-2"
               >
                 <FaChevronRight className="w-5 h-5" />
               </button>
