@@ -80,10 +80,10 @@ export default function Header() {
                     key={item.name}
                     href={item.href}
                     onClick={(e) => handleNavClick(e, item.href)}
-                    className={`text-sm font-medium transition-colors duration-200 px-4 py-2 rounded-md ${
+                    className={`text-sm font-medium ${
                       item.highlight
-                        ? 'text-white bg-primary hover:bg-secondary'
-                        : 'text-gray-700 hover:text-primary hover:bg-gray-50'
+                        ? 'btn-primary'
+                        : 'btn-secondary'
                     }`}
                   >
                     {item.name}
@@ -122,10 +122,10 @@ export default function Header() {
                       key={item.name}
                       href={item.href}
                       onClick={(e) => handleNavClick(e, item.href)}
-                      className={`block px-4 py-2 text-base font-medium rounded-md transition-colors duration-200 ${
+                      className={`block text-base font-medium ${
                         item.highlight
-                          ? 'text-white bg-primary hover:bg-secondary'
-                          : 'text-gray-700 hover:text-primary hover:bg-gray-50'
+                          ? 'btn-primary'
+                          : 'btn-secondary'
                       }`}
                     >
                       {item.name}
