@@ -3,17 +3,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
   {
-    src: '/images/hero/entrance-mural.webp',
+    src: 'public/images/hero/entrance-mural.webp',
     alt: 'Corlican Pet Motel entrance with charming mural featuring pets and trees',
     caption: 'Welcome to Corlican Pet Motel'
   },
   {
-    src: '/images/hero/kennels-view.webp',
+    src: 'public/images/hero/kennels-view.webp',
     alt: 'Spacious outdoor kennels with grassy exercise area',
     caption: 'Spacious Outdoor Facilities'
   },
   {
-    src: '/images/hero/signage.webp',
+    src: 'public/images/hero/signage.webp',
     alt: 'Corlican Pet Motel Boarding Kennels sign',
     caption: 'Professional Pet Boarding Services'
   }
@@ -65,7 +65,7 @@ export default function Hero() {
                 className="absolute top-8"
               >
                 <img 
-                  src="/logo.svg" 
+                  src="public/logo.svg" 
                   alt="Corlican Pet Motel" 
                   className="h-60 md:h-80 w-auto mx-auto"
                 />

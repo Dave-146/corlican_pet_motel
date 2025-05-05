@@ -65,7 +65,7 @@ export default function Header() {
                   className="flex items-center"
                 >
                   <img 
-                    src="/horizontal_logo.svg" 
+                    src="public/horizontal_logo.svg" 
                     alt="Corlican Pet Motel" 
                     className="h-12 w-auto hover:opacity-80 transition-opacity"
                   />
