@@ -1,20 +1,19 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../assets/logo.svg';
 
 const images = [
   {
-    src: './images/hero/entrance-mural.webp',
+    src: '/images/hero/entrance-mural.webp',
     alt: 'Corlican Pet Motel entrance with charming mural featuring pets and trees',
     caption: 'Welcome to Corlican Pet Motel'
   },
   {
-    src: './images/hero/kennels-view.webp',
+    src: '/images/hero/kennels-view.webp',
     alt: 'Spacious outdoor kennels with grassy exercise area',
     caption: 'Spacious Outdoor Facilities'
   },
   {
-    src: './images/hero/signage.webp',
+    src: '/images/hero/signage.webp',
     alt: 'Corlican Pet Motel Boarding Kennels sign',
     caption: 'Professional Pet Boarding Services'
   }
@@ -66,7 +65,7 @@ export default function Hero() {
                 className="absolute top-8"
               >
                 <img 
-                  src={logo} 
+                  src="/logo.svg" 
                   alt="Corlican Pet Motel" 
                   className="h-60 md:h-80 w-auto mx-auto"
                 />

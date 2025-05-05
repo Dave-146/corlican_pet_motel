@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
-import horizontalLogo from '../assets/horizontal_logo.svg';
 
 const navigation = [
   { name: 'Services', href: '#services' },
@@ -66,7 +65,7 @@ export default function Header() {
                   className="flex items-center"
                 >
                   <img 
-                    src={horizontalLogo} 
+                    src="/horizontal_logo.svg" 
                     alt="Corlican Pet Motel" 
                     className="h-12 w-auto hover:opacity-80 transition-opacity"
                   />

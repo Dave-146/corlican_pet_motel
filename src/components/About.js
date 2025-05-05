@@ -4,15 +4,15 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const images = [
   {
-    src: "./images/about/about-1.webp",
+    src: "/images/about/about-1.webp",
     alt: "Corlican Pet Motel exterior"
   },
   {
-    src: "./images/about/about-2.webp",
+    src: "/images/about/about-2.webp",
     alt: "Pet play area"
   },
   {
-    src: "./images/about/about-3.webp",
+    src: "/images/about/about-3.webp",
     alt: "Staff with pets"
   }
 ];
