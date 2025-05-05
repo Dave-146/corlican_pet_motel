@@ -80,10 +80,10 @@ export default function Header() {
                     key={item.name}
                     href={item.href}
                     onClick={(e) => handleNavClick(e, item.href)}
-                    className={`text-sm font-medium ${
+                    className={`text-sm font-medium transition-colors duration-200 ${
                       item.highlight
                         ? 'btn-primary'
-                        : 'btn-secondary'
+                        : 'text-gray-700 hover:text-primary'
                     }`}
                   >
                     {item.name}
@@ -122,10 +122,10 @@ export default function Header() {
                       key={item.name}
                       href={item.href}
                       onClick={(e) => handleNavClick(e, item.href)}
-                      className={`block text-base font-medium ${
+                      className={`block text-base font-medium transition-colors duration-200 ${
                         item.highlight
                           ? 'btn-primary'
-                          : 'btn-secondary'
+                          : 'text-gray-700 hover:text-primary'
                       }`}
                     >
                       {item.name}

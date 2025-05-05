@@ -15,11 +15,11 @@ const services = [
       "Customized feeding schedule",
       "Playtime with other dogs (optional)",
     ],
-    mainImage: "/images/services/dog-boarding-main.webp",
+    mainImage: "/corlican_pet_motel/images/services/dog-boarding-main.webp",
     images: [
-      { src: "/images/services/dog-boarding-1.webp", alt: "Spacious dog boarding area" },
-      { src: "/images/services/dog-boarding-2.webp", alt: "Dog play area" },
-      { src: "/images/services/dog-boarding-3.webp", alt: "Indoor dog accommodation" }
+      { src: "/corlican_pet_motel/images/services/dog-boarding-1.webp", alt: "Spacious dog boarding area" },
+      { src: "/corlican_pet_motel/images/services/dog-boarding-2.webp", alt: "Dog play area" },
+      { src: "/corlican_pet_motel/images/services/dog-boarding-3.webp", alt: "Indoor dog accommodation" }
     ]
   },
   {
@@ -35,11 +35,11 @@ const services = [
       "Quiet, peaceful environment",
       "Scratch posts and toys"
     ],
-    mainImage: "/images/services/cat-boarding-main.webp",
+    mainImage: "/corlican_pet_motel/images/services/cat-boarding-main.webp",
     images: [
-      { src: "/images/services/cat-boarding-1.webp", alt: "Luxury cat condo" },
-      { src: "/images/services/cat-boarding-2.webp", alt: "Cat play area" },
-      { src: "/images/services/cat-boarding-3.webp", alt: "Cat relaxation space" }
+      { src: "/corlican_pet_motel/images/services/cat-boarding-1.webp", alt: "Luxury cat condo" },
+      { src: "/corlican_pet_motel/images/services/cat-boarding-2.webp", alt: "Cat play area" },
+      { src: "/corlican_pet_motel/images/services/cat-boarding-3.webp", alt: "Cat relaxation space" }
     ]
   }
 ];
