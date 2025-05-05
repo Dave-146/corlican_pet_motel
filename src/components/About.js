@@ -90,13 +90,13 @@ export default function About() {
             <div className="absolute inset-0 flex items-center justify-between p-4">
               <button
                 onClick={prevImage}
-                className="bg-black/50 hover:bg-primary text-white p-2 rounded-full transition-colors"
+                className="btn-primary p-2 rounded-full"
               >
                 <FaChevronLeft className="w-5 h-5" />
               </button>
               <button
                 onClick={nextImage}
-                className="bg-black/50 hover:bg-primary text-white p-2 rounded-full transition-colors"
+                className="btn-primary p-2 rounded-full"
               >
                 <FaChevronRight className="w-5 h-5" />
               </button>
