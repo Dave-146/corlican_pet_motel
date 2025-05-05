@@ -119,7 +119,7 @@ export default function ServiceCard({
                       e.stopPropagation();
                       prevImage();
                     }}
-                    className="bg-black/50 hover:bg-primary text-white p-2 rounded-full transition-colors focus:ring-2 focus:ring-white focus:ring-offset-2 focus:outline-none active:ring-2 active:ring-white active:ring-offset-2"
+                    className="bg-black/50 hover:bg-primary text-white p-2 rounded-full transition-colors"
                   >
                     <FaChevronLeft className="w-5 h-5" />
                   </button>
@@ -128,7 +128,7 @@ export default function ServiceCard({
                       e.stopPropagation();
                       nextImage();
                     }}
-                    className="bg-black/50 hover:bg-primary text-white p-2 rounded-full transition-colors focus:ring-2 focus:ring-white focus:ring-offset-2 focus:outline-none active:ring-2 active:ring-white active:ring-offset-2"
+                    className="bg-black/50 hover:bg-primary text-white p-2 rounded-full transition-colors"
                   >
                     <FaChevronRight className="w-5 h-5" />
                   </button>
