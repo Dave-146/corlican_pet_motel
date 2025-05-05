@@ -41,24 +41,6 @@ const services = [
       { src: "./images/services/cat-boarding-2.webp", alt: "Cat play area" },
       { src: "./images/services/cat-boarding-3.webp", alt: "Cat relaxation space" }
     ]
-  },
-  {
-    title: "Pet Daycare",
-    price: "From €15",
-    period: "per day",
-    description: "Professional daycare services with supervised play sessions, rest periods, and lots of attention for your pet while you're away.",
-    features: [
-      "Supervised play sessions",
-      "Regular rest periods",
-      "Social interaction",
-      "Indoor/outdoor access",
-    ],
-    mainImage: "./images/services/daycare-main.webp",
-    images: [
-      { src: "./images/services/daycare-1.webp", alt: "Pet daycare play area" },
-      { src: "./images/services/daycare-2.webp", alt: "Indoor daycare facility" },
-      { src: "./images/services/daycare-3.webp", alt: "Outdoor play space" }
-    ]
   }
 ];
 
@@ -109,7 +91,7 @@ export default function Services() {
         </div>
 
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
