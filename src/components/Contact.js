@@ -2,54 +2,29 @@ import { useState, useRef } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
-// Initialize EmailJS with your public key
-emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY || '');
-
 const Contact = () => {
   const form = useRef();
-  const [status, setStatus] = useState({
-    submitted: false,
-    submitting: false,
-    info: { error: false, msg: null }
-  });
+  const [status, setStatus] = useState('');
 
-  const handleSubmit = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    setStatus(prevStatus => ({ ...prevStatus, submitting: true }));
+    setStatus('');
 
-    try {
-      await emailjs.sendForm(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-        form.current,
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
-      );
-
-      setStatus({
-        submitted: true,
-        submitting: false,
-        info: { error: false, msg: 'Message sent successfully!' }
-      });
-
-      // Reset form
-      form.current.reset();
-
-      // Clear success message after 5 seconds
-      setTimeout(() => {
-        setStatus({
-          submitted: false,
-          submitting: false,
-          info: { error: false, msg: null }
-        });
-      }, 5000);
-
-    } catch (error) {
-      setStatus({
-        submitted: false,
-        submitting: false,
-        info: { error: true, msg: 'An error occurred. Please try again later.' }
-      });
-    }
+    emailjs.sendForm(
+      'service_907t4a8',
+      'template_bydpvyf',
+      form.current,
+      '4PSJIVLdVusMig6Ba'
+    )
+    .then(
+      (result) => {
+        setStatus('Message sent successfully!');
+        form.current.reset();
+      },
+      (error) => {
+        setStatus('Failed to send message. Please try again.');
+      }
+    );
   };
 
   return (
@@ -118,14 +93,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-lg h-full flex flex-col">
             <h3 className="text-2xl font-display mb-6">Send us a Message</h3>
-            {status.info.msg && (
-              <div className={`p-4 rounded-md mb-6 ${
-                status.info.error ? 'bg-red-50 text-red-800' : 'bg-green-50 text-green-800'
-              }`}>
-                {status.info.msg}
-              </div>
-            )}
-            <form ref={form} onSubmit={handleSubmit} className="space-y-6 flex-1 flex flex-col">
+            <form ref={form} onSubmit={sendEmail} className="space-y-6 flex-1 flex flex-col">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                   Name
@@ -138,7 +106,6 @@ const Contact = () => {
                   required
                 />
               </div>
-
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                   Email
@@ -151,7 +118,6 @@ const Contact = () => {
                   required
                 />
               </div>
-
               <div className="flex-1 flex flex-col">
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                   Message
@@ -164,14 +130,8 @@ const Contact = () => {
                   required
                 />
               </div>
-
-              <button
-                type="submit"
-                disabled={status.submitting}
-                className={`btn-primary w-full ${status.submitting ? 'opacity-75 cursor-not-allowed' : ''}`}
-              >
-                {status.submitting ? 'Sending...' : 'Send Message'}
-              </button>
+              <button type="submit" className="btn-primary w-full">Send Message</button>
+              {status && <p className="mt-4 text-center">{status}</p>}
             </form>
           </div>
         </div>
