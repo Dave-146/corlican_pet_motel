@@ -5,7 +5,7 @@ import horizontalLogo from '../assets/horizontal_logo.svg';
 
 const navigation = [
   { name: 'Services', href: '#services' },
-  { name: 'Contact Us', href: '#contact', highlight: true },
+  { name: 'Get in Touch', href: '#contact', highlight: true },
 ];
 
 export default function Header() {
