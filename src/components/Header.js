@@ -82,7 +82,7 @@ export default function Header() {
                     onClick={(e) => handleNavClick(e, item.href)}
                     className={`text-sm font-medium transition-colors duration-200 ${
                       item.highlight
-                        ? 'btn-primary'
+                        ? 'btn-primary focus:outline-none'
                         : 'text-gray-700 hover:text-primary'
                     }`}
                   >
@@ -124,7 +124,7 @@ export default function Header() {
                       onClick={(e) => handleNavClick(e, item.href)}
                       className={`block text-base font-medium transition-colors duration-200 ${
                         item.highlight
-                          ? 'btn-primary'
+                          ? 'btn-primary focus:outline-none'
                           : 'text-gray-700 hover:text-primary'
                       }`}
                     >
