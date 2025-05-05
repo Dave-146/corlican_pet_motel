@@ -85,12 +85,12 @@ export default function ServiceCard({
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+              className="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
               onClick={(e) => e.stopPropagation()}
             >
               <button
                 onClick={() => setIsExpanded(false)}
-                className="absolute top-4 right-4 text-gray-400 hover:text-primary transition-colors z-10"
+                className="absolute top-4 right-4 text-gray-600 hover:text-primary transition-colors z-10 bg-white/90 p-2 rounded-full shadow-md hover:shadow-lg"
               >
                 <FaTimes className="w-6 h-6" />
               </button>
