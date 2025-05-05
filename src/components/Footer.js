@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="flex flex-col items-center">
             <div className="flex flex-col items-center mb-4">
               <img 
-                src="/logo.svg" 
+                src={process.env.PUBLIC_URL + "/logo.svg"} 
                 alt="Corlican Pet Motel" 
                 className="h-24 w-auto mb-4"
               />

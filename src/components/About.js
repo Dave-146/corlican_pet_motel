@@ -4,6 +4,11 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const images = [
   {
+    src: process.env.PUBLIC_URL + "/images/hero/entrance-mural.webp",
+    alt: "Corlican Pet Motel entrance with charming mural featuring pets and trees",
+    caption: "Welcome to Corlican Pet Motel"
+  },
+  {
     src: process.env.PUBLIC_URL + "/images/about/about-1.webp",
     alt: "Corlican Pet Motel exterior"
   },
