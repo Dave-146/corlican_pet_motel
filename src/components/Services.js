@@ -15,11 +15,13 @@ const services = [
       "Customized feeding schedule",
       "Playtime with other dogs (optional)",
     ],
-    mainImage: "/corlican_pet_motel/images/services/dog-boarding-main.webp",
+    mainImage: process.env.PUBLIC_URL + "/images/services/dog-boarding-main.webp",
     images: [
-      { src: "/corlican_pet_motel/images/services/dog-boarding-1.webp", alt: "Spacious dog boarding area" },
-      { src: "/corlican_pet_motel/images/services/dog-boarding-2.webp", alt: "Dog play area" },
-      { src: "/corlican_pet_motel/images/services/dog-boarding-3.webp", alt: "Indoor dog accommodation" }
+      { src: process.env.PUBLIC_URL + "/images/services/dog-boarding-1.webp", alt: "Spacious dog boarding area" },
+      { src: process.env.PUBLIC_URL + "/images/services/dog-boarding-2.webp", alt: "Dog play area" },
+      { src: process.env.PUBLIC_URL + "/images/services/dog-boarding-3.webp", alt: "Indoor dog accommodation" },
+      { src: process.env.PUBLIC_URL + "/images/services/dog-boarding-4.webp", alt: "Dog boarding 4" },
+      { src: process.env.PUBLIC_URL + "/images/services/dog-boarding-5.webp", alt: "Dog boarding 5" }
     ]
   },
   {
@@ -35,11 +37,14 @@ const services = [
       "Quiet, peaceful environment",
       "Scratch posts and toys"
     ],
-    mainImage: "/corlican_pet_motel/images/services/cat-boarding-main.webp",
+    mainImage: process.env.PUBLIC_URL + "/images/services/cat-boarding-main.webp",
     images: [
-      { src: "/corlican_pet_motel/images/services/cat-boarding-1.webp", alt: "Luxury cat condo" },
-      { src: "/corlican_pet_motel/images/services/cat-boarding-2.webp", alt: "Cat play area" },
-      { src: "/corlican_pet_motel/images/services/cat-boarding-3.webp", alt: "Cat relaxation space" }
+      { src: process.env.PUBLIC_URL + "/images/services/cat-boarding-1.webp", alt: "Luxury cat condo" },
+      { src: process.env.PUBLIC_URL + "/images/services/cat-boarding-2.webp", alt: "Cat play area" },
+      { src: process.env.PUBLIC_URL + "/images/services/cat-boarding-3.webp", alt: "Cat relaxation space" },
+      { src: process.env.PUBLIC_URL + "/images/services/cat-boarding-4.webp", alt: "Cat boarding 4" },
+      { src: process.env.PUBLIC_URL + "/images/services/cat-boarding-5.webp", alt: "Cat boarding 5" },
+      { src: process.env.PUBLIC_URL + "/images/services/cat-boarding-6.webp", alt: "Cat boarding 6" }
     ]
   }
 ];

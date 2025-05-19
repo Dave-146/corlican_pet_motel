@@ -10,6 +10,7 @@
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
     "framer-motion": "^12.6.2",
+    "lucide-react": "^0.511.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-normalize": "^13.0.1",
     "postcss-preset-env": "^10.1.5",
