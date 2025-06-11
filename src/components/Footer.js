@@ -25,7 +25,6 @@ export default function Footer() {
               <li><a href="#about" className="text-light hover:text-primary transition-colors">About Us</a></li>
               <li><a href="#services" className="text-light hover:text-primary transition-colors">Services</a></li>
               <li><a href="#contact" className="text-light hover:text-primary transition-colors">Contact</a></li>
-              <li><a href="#booking" className="text-light hover:text-primary transition-colors">Book Now</a></li>
             </ul>
           </nav>
 
