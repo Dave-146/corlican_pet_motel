@@ -53,6 +53,23 @@
   .focus-visible {
     @apply outline-2 outline-offset-2 outline-primary;
   }
+  /* Image utilities for better centering and fitting */
+  .img-centered {
+    @apply object-contain object-center;
+  }
+  .img-cover-centered {
+    @apply object-cover object-center;
+  }
+  /* Ensure images maintain aspect ratio and are centered */
+  .img-responsive {
+    @apply w-full h-full object-contain object-center;
+  }
+  /* For background images that need to be centered */
+  .bg-center-contain {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 /* Responsive utilities */
