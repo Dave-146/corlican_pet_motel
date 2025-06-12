@@ -60,13 +60,22 @@
   .img-cover-centered {
     @apply object-cover object-center;
   }
-  /* Ensure images maintain aspect ratio and are centered */
+  /* Ensure images fill containers while maintaining good centering */
   .img-responsive {
+    @apply w-full h-full object-cover object-center;
+  }
+  /* For images that need to show completely without cropping */
+  .img-fit {
     @apply w-full h-full object-contain object-center;
   }
   /* For background images that need to be centered */
   .bg-center-contain {
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-center-cover {
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }

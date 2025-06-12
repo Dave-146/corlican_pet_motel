@@ -86,7 +86,7 @@ export default function About() {
                 <img
                   src={images[currentImageIndex].src}
                   alt={images[currentImageIndex].alt}
-                  className="object-contain object-center w-full h-full bg-gray-100"
+                  className="object-cover object-center w-full h-full"
                 />
               </motion.div>
             </AnimatePresence>

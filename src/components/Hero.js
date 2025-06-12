@@ -48,7 +48,7 @@ export default function Hero() {
             <img
               src={images[currentImageIndex].src}
               alt={images[currentImageIndex].alt}
-              className="object-contain object-center w-full h-full bg-gray-900"
+              className="object-cover object-center w-full h-full"
             />
             <div className="absolute inset-0 bg-black/30" />
           </motion.div>
