@@ -165,9 +165,9 @@ export default function ServiceCard({
                     <h3 className="text-xl font-display mb-2">Pricing</h3>
                     <ul className="mb-2">
                       {Object.entries(prices).map(([label, value]) => (
-                        <li key={label} className="flex justify-between items-center text-gray-700 text-base py-1">
+                        <li key={label} className="flex items-center text-gray-700 text-base py-1 gap-2">
                           <span>{label}</span>
-                          <span className="font-semibold ml-2">{value}</span>
+                          <span className="font-semibold">{value}</span>
                         </li>
                       ))}
                     </ul>
