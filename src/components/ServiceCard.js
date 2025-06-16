@@ -163,11 +163,11 @@ export default function ServiceCard({
                 {prices && (
                   <div className="mb-6">
                     <h3 className="text-xl font-display mb-2">Pricing</h3>
-                    <ul className="mb-2">
+                    <ul className="mb-2 ml-6">
                       {Object.entries(prices).map(([label, value]) => (
-                        <li key={label} className="flex items-center text-gray-700 text-base py-1 gap-2">
-                          <span>{label}</span>
-                          <span className="font-semibold">{value}</span>
+                        <li key={label} className="flex items-center text-gray-700 text-base py-1">
+                          <span className="flex-1 text-left">{label}</span>
+                          <span className="font-semibold min-w-[48px] text-right ml-4">{value}</span>
                         </li>
                       ))}
                     </ul>
