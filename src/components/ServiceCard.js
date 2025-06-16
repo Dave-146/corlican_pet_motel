@@ -10,6 +10,7 @@ export default function ServiceCard({
   features,
   images,
   mainImage,
+  prices,
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -159,6 +160,19 @@ export default function ServiceCard({
                   </div>
                 </div>
                 <p className="text-gray-600 mb-6">{description}</p>
+                {prices && (
+                  <div className="mb-6">
+                    <h3 className="text-xl font-display mb-2">Pricing</h3>
+                    <ul className="mb-2">
+                      {Object.entries(prices).map(([label, value]) => (
+                        <li key={label} className="flex justify-between text-gray-700 text-base py-1 border-b last:border-b-0">
+                          <span>{label}</span>
+                          <span className="font-semibold">{value}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
                 <div className="border-t border-gray-200 pt-6">
                   <h3 className="text-xl font-display mb-4">Features</h3>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
