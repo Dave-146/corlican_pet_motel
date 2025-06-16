@@ -41,7 +41,7 @@ export default function ServiceCard({
           <img
             src={mainImage}
             alt={title}
-            className="object-cover object-center w-full h-full"
+            className="object-contain object-center w-full h-full"
           />
         </div>
         <div className="p-6">
@@ -108,7 +108,7 @@ export default function ServiceCard({
                     <img
                       src={images[currentImageIndex].src}
                       alt={images[currentImageIndex].alt}
-                      className="object-cover object-center w-full h-full"
+                      className="object-contain object-center w-full h-full"
                     />
                   </motion.div>
                 </AnimatePresence>
