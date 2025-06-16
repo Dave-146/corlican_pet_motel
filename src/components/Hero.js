@@ -88,7 +88,7 @@ export default function Hero() {
                 transition={{ duration: 1, delay: 0.5 }}
                 className="text-xl md:text-2xl mb-8 font-sans text-white text-shadow absolute bottom-0"
               >
-                Luxury boarding for your beloved pets in a safe and caring environment
+                Purpose built boarding for your beloved pets in a safe and caring environment
               </motion.p>
             </div>
             <motion.div
