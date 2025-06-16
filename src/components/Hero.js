@@ -4,17 +4,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 const images = [
   {
     src: process.env.PUBLIC_URL + "/images/hero/entrance-mural.webp",
-    alt: 'Corlican Pet Motel entrance with charming mural featuring pets and trees',
+    alt: 'Corlican Pet Motel entrance mural with pets and trees',
     caption: 'Welcome to Corlican Pet Motel'
   },
   {
     src: process.env.PUBLIC_URL + "/images/hero/kennels-view.webp",
-    alt: 'Spacious outdoor kennels with grassy exercise area',
+    alt: 'View of spacious outdoor kennels and grassy area',
     caption: 'Spacious Outdoor Facilities'
   },
   {
     src: process.env.PUBLIC_URL + "/images/hero/signage.webp",
-    alt: 'Corlican Pet Motel Boarding Kennels sign',
+    alt: 'Corlican Pet Motel Boarding Kennels signage',
     caption: 'Professional Pet Boarding Services'
   }
 ];
