@@ -7,6 +7,13 @@ const services = [
     price: "From €18",
     period: "per night",
     description: "Cozy accommodation, offering spacious indoor-outdoor runs, heated if required and plenty of daily exercise.",
+    prices: {
+      "1 dog": "€18",
+      "2 dogs": "€30",
+      "3 dogs": "€40",
+      "Dog and cat": "€28",
+      "Daycare": "€15"
+    },
     features: [
       "Spacious indoor-outdoor runs",
       "Daily exercise sessions",
@@ -29,6 +36,14 @@ const services = [
     price: "From €12",
     period: "per night",
     description: "Quiet and cozy cat condos with climbing spaces, window views, and plenty of love from our family of cat lovers.",
+    prices: {
+      "1 cat": "€12",
+      "2 cats": "€20",
+      "Dog and cat": "€28",
+      "2 dogs and 1 cat": "€40",
+      "1 dog and 2 cats": "€36",
+      "Daycare": "€15"
+    },
     features: [
       "Private cat condos",
       "Multi-level climbing spaces",
