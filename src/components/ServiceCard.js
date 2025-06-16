@@ -37,7 +37,7 @@ export default function ServiceCard({
         className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
         onClick={() => !isExpanded && setIsExpanded(true)}
       >
-        <div className="relative h-48">
+        <div className="relative h-72">
           <img
             src={mainImage}
             alt={title}
