@@ -37,11 +37,11 @@ export default function ServiceCard({
         className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
         onClick={() => !isExpanded && setIsExpanded(true)}
       >
-        <div className="relative h-72">
+        <div className="relative h-80">
           <img
             src={mainImage}
             alt={title}
-            className="object-contain object-center w-full h-full"
+            className="object-cover object-center w-full h-full"
           />
         </div>
         <div className="p-6">
@@ -108,7 +108,7 @@ export default function ServiceCard({
                     <img
                       src={images[currentImageIndex].src}
                       alt={images[currentImageIndex].alt}
-                      className="object-contain object-center w-full h-full"
+                      className="object-cover object-center w-full h-full"
                     />
                   </motion.div>
                 </AnimatePresence>
