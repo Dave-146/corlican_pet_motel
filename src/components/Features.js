@@ -55,7 +55,7 @@ export default function Features() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-display font-bold text-primary mb-4">Why Choose Us</h2>
           <p className="text-xl font-sans text-gray-custom">
-            Experience premium pet care services tailored to your furry friend's needs
+            Experience premium pet care services tailored to your furry family's needs
           </p>
         </div>
 
