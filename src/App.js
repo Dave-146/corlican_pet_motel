@@ -36,15 +36,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <About />
-      <Features />
-      <Services />
-      <Contact />
-      <Footer />
       <main>
-        {/* Other components will be added here */}
+        <Hero />
+        <About />
+        <Features />
+        <Services />
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -74,7 +74,7 @@ export default function Features() {
             >
               <div className="flex flex-col items-center">
                 <div className="mb-4">
-                  <feature.icon className="text-primary text-4xl" />
+                  <feature.icon className="text-primary text-4xl" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-display font-bold text-dark mb-3">{feature.title}</h3>
                 <p className="text-gray-custom font-sans">{feature.description}</p>
