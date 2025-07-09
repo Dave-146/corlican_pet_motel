@@ -23,11 +23,13 @@ function App() {
       console.log('EmailJS Initialized Successfully');
       
       // Verify environment variables are loaded
-      console.log('Environment Variables Check:', {
-        hasServiceId: !!process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        hasTemplateId: !!process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        hasPublicKey: !!process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-      });
+      if (process.env.NODE_ENV === 'development') {
+        console.log('Environment Variables Check:', {
+          hasServiceId: !!process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          hasTemplateId: !!process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          hasPublicKey: !!process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        });
+      }
     } catch (error) {
       console.error('EmailJS Initialization Error:', error);
     }

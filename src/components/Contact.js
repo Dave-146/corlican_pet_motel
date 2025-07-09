@@ -10,11 +10,13 @@ const Contact = () => {
   // Add initialization check
   useEffect(() => {
     // Log environment variables (without exposing sensitive data)
-    console.log('EmailJS Config Check:', {
-      hasServiceId: !!process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      hasTemplateId: !!process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      hasPublicKey: !!process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-    });
+    if (process.env.NODE_ENV === 'development') {
+      console.log('EmailJS Config Check:', {
+        hasServiceId: !!process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        hasTemplateId: !!process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        hasPublicKey: !!process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      });
+    }
   }, []);
 
   const sendEmail = async (e) => {
@@ -195,7 +197,7 @@ const Contact = () => {
               {status && (
                 <p className={`mt-4 text-center ${
                   status.includes('successfully') ? 'text-green-600' : 'text-red-600'
-                }`}>
+                }`} aria-live="polite">
                   {status}
                 </p>
               )}
