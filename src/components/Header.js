@@ -3,7 +3,9 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navigation = [
+  { name: 'About', href: '#about' },
   { name: 'Services', href: '#services' },
+  { name: 'FAQ', href: '#faq' },
   { name: 'Get in Touch', href: '#contact', highlight: true },
 ];
 
