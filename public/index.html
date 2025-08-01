@@ -20,7 +20,7 @@
       "description": "Premium pet boarding services in Wexford, Ireland. Spacious accommodations, 24/7 vet access, and loving care for dogs and cats.",
       "url": "https://www.corlicanpetmotel.ie",
       "telephone": "+353-53-9123456",
-      "email": "info@corlicanpetmotel.ie",
+      "email": "corlicanpetmotel@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Corlican",
@@ -88,7 +88,6 @@
       ],
       "sameAs": [
         "https://www.facebook.com/corlicanpetmotel",
-        "https://www.instagram.com/corlicanpetmotel"
       ]
     }
     </script>
@@ -142,12 +141,12 @@
     <title>Corlican Pet Motel - Premium Pet Boarding Services in Wexford, Ireland</title>
     
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=%REACT_APP_GA_MEASUREMENT_ID%"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID', {
+      gtag('config', '%REACT_APP_GA_MEASUREMENT_ID%', {
         page_title: 'Corlican Pet Motel - Premium Pet Boarding Services',
         page_location: 'https://www.corlicanpetmotel.ie/',
         custom_map: {
@@ -157,8 +156,7 @@
       });
     </script>
     
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
