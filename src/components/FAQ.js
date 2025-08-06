@@ -5,15 +5,19 @@ import { FaChevronDown } from 'react-icons/fa';
 const faqs = [
   {
     question: "What are your opening hours for drop-off and pick-up?",
-    answer: "We are open for drop-off and pick-up from 9:00 AM to 6:00 PM daily. We recommend calling ahead to arrange your pet's arrival time to ensure we can give them a proper welcome."
+    answer: "We are open for drop-off and pick-up by appointment from 9:00 AM to 6:00 PM Monday through Saturday. Sunday is strictly by appointment only. We recommend calling ahead to arrange your pet's arrival time to ensure we can give them a proper welcome."
+  },
+  {
+    question: "Can we visit our pet before boarding?",
+    answer: "Yes, we allow visitors to come and see our facility before boarding with us. Please call ahead to arrange your visit."
   },
   {
     question: "Do you provide food for the pets during their stay?",
-    answer: "We provide premium quality food, but we recommend bringing your pet's regular food to maintain their diet and avoid any digestive issues. We can accommodate special dietary requirements."
+    answer: "We provide premium quality food. We can accommodate special dietary requirements."
   },
   {
-    question: "What vaccinations does my pet need before boarding?",
-    answer: "Dogs need: DHPP, Bordetella, and Rabies vaccinations. Cats need: FVRCP and Rabies vaccinations. All vaccinations must be current and we require proof from your veterinarian."
+    question: "Does my pet need to be vaccinated?",
+    answer: "Dogs and cats needs to be fully vaccinated including kennel cough. All vaccinations must be current and we require proof from your veterinarian."
   },
   {
     question: "Can I bring my pet's favorite toys and bedding?",
@@ -21,12 +25,13 @@ const faqs = [
   },
   {
     question: "What happens if my pet gets sick during their stay?",
-    answer: "We have 24/7 access to veterinary care. If your pet shows any signs of illness, we will contact you immediately and consult with our veterinarian. We also have your emergency contact information on file."
+    answer: "We have 24/7 access to veterinary care. If your pet shows any signs of illness, we will contact you first and consult with our veterinarian if needed. We also will have your emergency contact information on file."
   },
   {
     question: "Can multiple pets from the same family stay together?",
-    answer: "Yes! We offer special rates for multiple pets from the same family. Dogs and cats can be accommodated together, and we have spacious runs that can accommodate multiple dogs."
+    answer: "Yes! We offer special rates for multiple pets from the same family. We have spacious runs that can accommodate multiple dogs. We also can accommodate multiple cats in a single run."
   },
+
 ];
 
 export default function FAQ() {
