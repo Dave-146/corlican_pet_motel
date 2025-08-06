@@ -9,9 +9,9 @@ const Contact = () => {
 
   // Add initialization check
   useEffect(() => {
-    // Log environment variables (without exposing sensitive data)
+    // Only log configuration status in development
     if (process.env.NODE_ENV === 'development') {
-      console.log('EmailJS Config Check:', {
+      console.log('EmailJS Configuration Status:', {
         hasServiceId: !!process.env.REACT_APP_EMAILJS_SERVICE_ID,
         hasTemplateId: !!process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         hasPublicKey: !!process.env.REACT_APP_EMAILJS_PUBLIC_KEY
@@ -28,7 +28,9 @@ const Contact = () => {
     setStatus('');
 
     try {
-      console.log('Starting email submission...');
+      if (process.env.NODE_ENV === 'development') {
+        console.log('Starting email submission...');
+      }
       
       // Get form data
       const formData = new FormData(form.current);
@@ -45,11 +47,13 @@ const Contact = () => {
         throw new Error('EmailJS configuration is missing');
       }
 
-      console.log('Sending email with params:', {
-        ...templateParams,
-        serviceId: process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        templateId: process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      });
+      if (process.env.NODE_ENV === 'development') {
+        console.log('Sending email with user data:', {
+          user_name: templateParams.user_name,
+          user_email: templateParams.user_email,
+          message_length: templateParams.message.length
+        });
+      }
 
       // Send email using send method
       const result = await emailjs.send(
@@ -59,7 +63,9 @@ const Contact = () => {
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       );
 
-      console.log('EmailJS Response:', result);
+      if (process.env.NODE_ENV === 'development') {
+        console.log('EmailJS Response:', result);
+      }
 
       if (result.text === 'OK') {
         setStatus('Message sent successfully!');
@@ -68,12 +74,13 @@ const Contact = () => {
         throw new Error('Failed to send message');
       }
     } catch (error) {
-      console.error('Detailed EmailJS Error:', {
-        error: error.message,
-        code: error.code,
-        status: error.status,
-        text: error.text
-      });
+      if (process.env.NODE_ENV === 'development') {
+        console.error('EmailJS Error Details:', {
+          message: error.message,
+          code: error.code,
+          status: error.status
+        });
+      }
       setStatus('Failed to send message. Please try again or contact us directly at corlicanpetmotel@hotmail.com');
     } finally {
       setIsSubmitting(false);

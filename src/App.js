@@ -16,23 +16,22 @@ function App() {
     try {
       const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
       if (!publicKey) {
-        console.error('EmailJS Public Key is missing!');
+        if (process.env.NODE_ENV === 'development') {
+          console.error('EmailJS Public Key is missing!');
+        }
         return;
       }
       
       emailjs.init(publicKey);
-      console.log('EmailJS Initialized Successfully');
       
-      // Verify environment variables are loaded
+      // Only log success in development
       if (process.env.NODE_ENV === 'development') {
-        console.log('Environment Variables Check:', {
-          hasServiceId: !!process.env.REACT_APP_EMAILJS_SERVICE_ID,
-          hasTemplateId: !!process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-          hasPublicKey: !!process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-        });
+        console.log('EmailJS Initialized Successfully');
       }
     } catch (error) {
-      console.error('EmailJS Initialization Error:', error);
+      if (process.env.NODE_ENV === 'development') {
+        console.error('EmailJS Initialization Error:', error);
+      }
     }
   }, []);
 
