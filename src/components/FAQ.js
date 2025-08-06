@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "Can multiple pets from the same family stay together?",
-    answer: "Yes! We offer special rates for multiple pets from the same family. We have spacious pens that can accommodate multiple dogs. We also can accommodate multiple cats in a single pen."
+    answer: "Yes! We offer special rates for multiple pets from the same family. We have spacious runs that can accommodate multiple dogs. We also can accommodate multiple cats in a single pen."
   },
 
 ];
