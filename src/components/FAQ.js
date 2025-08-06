@@ -5,19 +5,19 @@ import { FaChevronDown } from 'react-icons/fa';
 const faqs = [
   {
     question: "What are your opening hours for drop-off and pick-up?",
-    answer: "We are open for drop-off and pick-up by appointment from 9:00 AM to 6:00 PM Monday through Saturday. Sunday is strictly by appointment only. We recommend calling ahead to arrange your pet's arrival time to ensure we can give them a proper welcome."
+    answer: "We are open for drop-off and pick-up by appointment from 9:00 AM to 6:00 PM Monday through Saturday. Sunday is strictly at 12pm or 6pm only. We recommend calling ahead to arrange your pet's arrival time to ensure we can give them a proper welcome."
   },
   {
-    question: "Can we visit our pet before boarding?",
+    question: "Can we visit your kennels before boarding?",
     answer: "Yes, we allow visitors to come and see our facility before boarding with us. Please call ahead to arrange your visit."
   },
   {
     question: "Do you provide food for the pets during their stay?",
-    answer: "We provide premium quality food. We can accommodate special dietary requirements."
+    answer: "We provide premium quality food. We can accommodate special dietary requirements if provided."
   },
   {
     question: "Does my pet need to be vaccinated?",
-    answer: "Dogs and cats needs to be fully vaccinated including kennel cough. All vaccinations must be current and we require proof from your veterinarian."
+    answer: "Dogs need to be fully vaccinated including kennel cough. All vaccinations must be current and we require proof from your veterinarian."
   },
   {
     question: "Can I bring my pet's favorite toys and bedding?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "Can multiple pets from the same family stay together?",
-    answer: "Yes! We offer special rates for multiple pets from the same family. We have spacious runs that can accommodate multiple dogs. We also can accommodate multiple cats in a single run."
+    answer: "Yes! We offer special rates for multiple pets from the same family. We have spacious pens that can accommodate multiple dogs. We also can accommodate multiple cats in a single pen."
   },
 
 ];
