@@ -2,7 +2,7 @@
   "name": "corlican_pet_motel",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.corlicanpetmotel.ie",
+  "homepage": "https://dave-146.github.io/corlican_pet_motel",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@googlemaps/js-api-loader": "^1.16.8",
