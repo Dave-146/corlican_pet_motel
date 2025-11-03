@@ -57,6 +57,7 @@ export default function Hero() {
               alt={images[currentImageIndex].alt}
               className="object-cover object-center w-full h-full"
               loading={currentImageIndex === 0 ? "eager" : "lazy"}
+              fetchPriority={currentImageIndex === 0 ? "high" : "auto"}
               decoding="async"
               width="1200"
               height="675"
