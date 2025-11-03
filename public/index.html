@@ -11,6 +11,21 @@
     />
     <link rel="canonical" href="https://www.corlicanpetmotel.ie/" />
     
+    <!-- Preload critical hero images FIRST - before other resources -->
+    <link rel="preload" href="%PUBLIC_URL%/images/hero/entrance-mural.webp" as="image" fetchpriority="high" type="image/webp" media="(min-width: 769px)">
+    <link rel="preload" href="%PUBLIC_URL%/images/hero/entrance-mural-mobile.webp" as="image" fetchpriority="high" type="image/webp" media="(max-width: 768px)">
+    <link rel="preload" href="%PUBLIC_URL%/images/hero/kennels-view.webp" as="image" type="image/webp" media="(min-width: 769px)">
+    <link rel="preload" href="%PUBLIC_URL%/images/hero/kennels-view-mobile.webp" as="image" type="image/webp" media="(max-width: 768px)">
+    <link rel="preload" href="%PUBLIC_URL%/images/hero/signage.webp" as="image" type="image/webp" media="(min-width: 769px)">
+    <link rel="preload" href="%PUBLIC_URL%/images/hero/signage-mobile.webp" as="image" type="image/webp" media="(max-width: 768px)">
+    <link rel="preload" href="%PUBLIC_URL%/logo.svg" as="image" fetchpriority="high" type="image/svg+xml">
+    
+    <!-- Preload above-the-fold service images -->
+    <link rel="preload" href="%PUBLIC_URL%/images/services/Dog_1.webp" as="image" type="image/webp" media="(min-width: 769px)">
+    <link rel="preload" href="%PUBLIC_URL%/images/services/Dog_1-mobile.webp" as="image" type="image/webp" media="(max-width: 768px)">
+    <link rel="preload" href="%PUBLIC_URL%/images/services/Cat_1.webp" as="image" type="image/webp" media="(min-width: 769px)">
+    <link rel="preload" href="%PUBLIC_URL%/images/services/Cat_1-mobile.webp" as="image" type="image/webp" media="(max-width: 768px)">
+    
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
@@ -285,10 +300,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Preload critical resources -->
-    <link rel="preload" href="%PUBLIC_URL%/images/hero/entrance-mural.webp" as="image" fetchpriority="high">
-    <link rel="preload" href="%PUBLIC_URL%/logo.svg" as="image" fetchpriority="high">
     
     <!-- DNS prefetch for external domains -->
     <link rel="dns-prefetch" href="//www.google-analytics.com">
