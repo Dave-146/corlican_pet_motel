@@ -7,19 +7,19 @@ const images = [
   {
     desktop: baseUrl + "/images/hero/entrance-mural.webp",
     mobile: baseUrl + "/images/hero/entrance-mural-mobile.webp",
-    alt: 'Corlican Pet Motel entrance mural with pets and trees',
+    alt: 'Corlican Pet Motel entrance mural featuring colorful pet boarding facility in Wexford, Ireland with pets and trees',
     caption: 'Welcome to Corlican Pet Motel'
   },
   {
     desktop: baseUrl + "/images/hero/kennels-view.webp",
     mobile: baseUrl + "/images/hero/kennels-view-mobile.webp",
-    alt: 'View of spacious outdoor kennels and grassy area',
+    alt: 'Spacious outdoor dog kennels and grassy exercise area at Corlican Pet Motel boarding facility in Wexford',
     caption: 'Spacious Outdoor Facilities'
   },
   {
     desktop: baseUrl + "/images/hero/signage.webp",
     mobile: baseUrl + "/images/hero/signage-mobile.webp",
-    alt: 'Corlican Pet Motel Boarding Kennels signage',
+    alt: 'Corlican Pet Motel Boarding Kennels professional signage for pet boarding services in Wexford, Ireland',
     caption: 'Professional Pet Boarding Services'
   }
 ];

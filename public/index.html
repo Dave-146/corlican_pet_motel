@@ -92,12 +92,151 @@
     }
     </script>
     
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Corlican Pet Motel",
+      "url": "https://www.corlicanpetmotel.ie",
+      "logo": "https://www.corlicanpetmotel.ie/logo.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+353-53-9123456",
+        "contactType": "Customer Service",
+        "email": "corlicanpetmotel@gmail.com",
+        "areaServed": "IE",
+        "availableLanguage": "English"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Corlican",
+        "addressLocality": "Wexford",
+        "addressRegion": "County Wexford",
+        "addressCountry": "IE"
+      },
+      "sameAs": [
+        "https://www.facebook.com/corlicanpetmotel"
+      ],
+      "foundingDate": "2006"
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are your opening hours for drop-off and pick-up?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are open for drop-off and pick-up by appointment from 9:00 AM to 6:00 PM Monday through Saturday. Sunday is strictly at 12pm or 6pm only. We recommend calling ahead to arrange your pet's arrival time to ensure we can give them a proper welcome."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we visit your kennels before boarding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we allow visitors to come and see our facility before boarding with us. Please call ahead to arrange your visit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide food for the pets during their stay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide premium quality food. We can accommodate special dietary requirements if provided."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does my pet need to be vaccinated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dogs need to be fully vaccinated including kennel cough. All vaccinations must be current and we require proof from your veterinarian."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I bring my pet's favorite toys and bedding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! We encourage you to bring familiar items like toys, blankets, or bedding to help your pet feel more comfortable during their stay. We also provide clean bedding if needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if my pet gets sick during their stay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We have 24/7 access to veterinary care. If your pet shows any signs of illness, we will contact you first and consult with our veterinarian if needed. We also will have your emergency contact information on file."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can multiple pets from the same family stay together?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We offer special rates for multiple pets from the same family. We have spacious runs that can accommodate multiple dogs. We also can accommodate multiple cats in a single pen."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.corlicanpetmotel.ie/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://www.corlicanpetmotel.ie/#about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Services",
+          "item": "https://www.corlicanpetmotel.ie/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "FAQ",
+          "item": "https://www.corlicanpetmotel.ie/#faq"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Contact",
+          "item": "https://www.corlicanpetmotel.ie/#contact"
+        }
+      ]
+    }
+    </script>
+    
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Corlican Pet Motel - Premium Pet Boarding in Wexford" />
     <meta property="og:description" content="Premium Pet Boarding Services in Wexford. Spacious accommodations, 24/7 vet access, and loving care for your pets." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.corlicanpetmotel.ie/" />
-    <meta property="og:image" content="https://www.corlicanpetmotel.ie/logo192.png" />
+    <meta property="og:image" content="https://www.corlicanpetmotel.ie/images/hero/entrance-mural.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta property="og:image:alt" content="Corlican Pet Motel entrance mural with pets and trees" />
     <meta property="og:site_name" content="Corlican Pet Motel" />
     <meta property="og:locale" content="en_IE" />
     
@@ -105,7 +244,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Corlican Pet Motel - Premium Pet Boarding in Wexford" />
     <meta name="twitter:description" content="Premium Pet Boarding Services in Wexford. Spacious accommodations, 24/7 vet access, and loving care for your pets." />
-    <meta name="twitter:image" content="https://www.corlicanpetmotel.ie/logo192.png" />
+    <meta name="twitter:image" content="https://www.corlicanpetmotel.ie/images/hero/entrance-mural.webp" />
+    <meta name="twitter:image:alt" content="Corlican Pet Motel entrance mural with pets and trees" />
     <meta name="twitter:site" content="@corlicanpetmotel" />
     
     <!-- Additional SEO Meta Tags -->

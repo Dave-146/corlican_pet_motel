@@ -123,7 +123,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <address className="flex items-start space-x-4 not-italic">
               <div className="bg-primary text-white p-3 rounded-full">
                 <FaMapMarkerAlt className="w-6 h-6" />
               </div>
@@ -133,7 +133,7 @@ const Contact = () => {
                 <p className="text-gray-600">Enniscorthy, Wexford</p>
                 <p className="text-gray-600">Y21 T6X5</p>
               </div>
-            </div>
+            </address>
 
             {/* Google Maps Embed */}
             <div className="h-[450px] rounded-lg overflow-hidden shadow-lg">

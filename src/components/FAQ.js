@@ -109,21 +109,6 @@ export default function FAQ() {
           ))}
         </div>
 
-        {/* FAQ Schema for SEO */}
-        <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": faqs.map(faq => ({
-            "@type": "Question",
-            "name": faq.question,
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": faq.answer
-            }
-          }))
-        })}
-        </script>
       </div>
     </section>
   );
