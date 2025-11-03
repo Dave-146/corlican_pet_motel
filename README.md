@@ -6,7 +6,7 @@ Premium Pet Boarding Website
 
 Welcome to the Corlican Pet Motel website! This is a modern, responsive web application for a purpose-built pet boarding facility, providing information about our services, features, and contact details for pet owners.
 
-## 🚀 Features
+## Features
 
 - **Spacious Accommodations:** Comfortable, climate-controlled rooms for pets
 - **24/7 On-Call Vet:** Veterinary access for health and well-being
@@ -27,3 +27,5 @@ Welcome to the Corlican Pet Motel website! This is a modern, responsive web appl
 
 
 © Corlican Pet Motel. All rights reserved.
+
+Designed by David Crean Design (https://www.davidcrean.com) 
