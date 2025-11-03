@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import ServiceCard from './ServiceCard';
 
+const baseUrl = process.env.PUBLIC_URL || '';
+
 const services = [
   {
     title: "Dog Boarding",
@@ -22,13 +24,14 @@ const services = [
       "Customized feeding schedule",
       "Playtime with other dogs (optional)",
     ],
-    mainImage: process.env.PUBLIC_URL + "/images/services/Dog_1.webp",
+    mainImage: baseUrl + "/images/services/Dog_1.webp",
+    mainImageMobile: baseUrl + "/images/services/Dog_1-mobile.webp",
     images: [
-      { src: process.env.PUBLIC_URL + "/images/services/Dog_1.webp", alt: "Dog enjoying boarding facility 1" },
-      { src: process.env.PUBLIC_URL + "/images/services/Dog_2.webp", alt: "Dog enjoying boarding facility 2" },
-      { src: process.env.PUBLIC_URL + "/images/services/Dog_3.webp", alt: "Dog enjoying boarding facility 3" },
-      { src: process.env.PUBLIC_URL + "/images/services/Dog_4.webp", alt: "Dog enjoying boarding facility 4" },
-      { src: process.env.PUBLIC_URL + "/images/services/Dog_5.webp", alt: "Dog enjoying boarding facility 5" }
+      { desktop: baseUrl + "/images/services/Dog_1.webp", mobile: baseUrl + "/images/services/Dog_1-mobile.webp", alt: "Dog enjoying boarding facility 1" },
+      { desktop: baseUrl + "/images/services/Dog_2.webp", mobile: baseUrl + "/images/services/Dog_2-mobile.webp", alt: "Dog enjoying boarding facility 2" },
+      { desktop: baseUrl + "/images/services/Dog_3.webp", mobile: baseUrl + "/images/services/Dog_3-mobile.webp", alt: "Dog enjoying boarding facility 3" },
+      { desktop: baseUrl + "/images/services/Dog_4.webp", mobile: baseUrl + "/images/services/Dog_4-mobile.webp", alt: "Dog enjoying boarding facility 4" },
+      { desktop: baseUrl + "/images/services/Dog_5.webp", mobile: baseUrl + "/images/services/Dog_5-mobile.webp", alt: "Dog enjoying boarding facility 5" }
     ]
   },
   {
@@ -52,13 +55,14 @@ const services = [
       "Quiet, peaceful environment",
       "Scratch posts and toys"
     ],
-    mainImage: process.env.PUBLIC_URL + "/images/services/Cat_1.webp",
+    mainImage: baseUrl + "/images/services/Cat_1.webp",
+    mainImageMobile: baseUrl + "/images/services/Cat_1-mobile.webp",
     images: [
-      { src: process.env.PUBLIC_URL + "/images/services/Cat_1.webp", alt: "Cat enjoying boarding facility 1" },
-      { src: process.env.PUBLIC_URL + "/images/services/Cat_2.webp", alt: "Cat enjoying boarding facility 2" },
-      { src: process.env.PUBLIC_URL + "/images/services/Cat_3.webp", alt: "Cat enjoying boarding facility 3" },
-      { src: process.env.PUBLIC_URL + "/images/services/Cat_4.webp", alt: "Cat enjoying boarding facility 4" },
-      { src: process.env.PUBLIC_URL + "/images/services/Cat_5.webp", alt: "Cat enjoying boarding facility 5" }
+      { desktop: baseUrl + "/images/services/Cat_1.webp", mobile: baseUrl + "/images/services/Cat_1-mobile.webp", alt: "Cat enjoying boarding facility 1" },
+      { desktop: baseUrl + "/images/services/Cat_2.webp", mobile: baseUrl + "/images/services/Cat_2-mobile.webp", alt: "Cat enjoying boarding facility 2" },
+      { desktop: baseUrl + "/images/services/Cat_3.webp", mobile: baseUrl + "/images/services/Cat_3-mobile.webp", alt: "Cat enjoying boarding facility 3" },
+      { desktop: baseUrl + "/images/services/Cat_4.webp", mobile: baseUrl + "/images/services/Cat_4-mobile.webp", alt: "Cat enjoying boarding facility 4" },
+      { desktop: baseUrl + "/images/services/Cat_5.webp", mobile: baseUrl + "/images/services/Cat_5-mobile.webp", alt: "Cat enjoying boarding facility 5" }
     ]
   }
 ];

@@ -1,19 +1,24 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const baseUrl = process.env.PUBLIC_URL || '';
+
 const images = [
   {
-    src: process.env.PUBLIC_URL + "/images/hero/entrance-mural.webp",
+    desktop: baseUrl + "/images/hero/entrance-mural.webp",
+    mobile: baseUrl + "/images/hero/entrance-mural-mobile.webp",
     alt: 'Corlican Pet Motel entrance mural with pets and trees',
     caption: 'Welcome to Corlican Pet Motel'
   },
   {
-    src: process.env.PUBLIC_URL + "/images/hero/kennels-view.webp",
+    desktop: baseUrl + "/images/hero/kennels-view.webp",
+    mobile: baseUrl + "/images/hero/kennels-view-mobile.webp",
     alt: 'View of spacious outdoor kennels and grassy area',
     caption: 'Spacious Outdoor Facilities'
   },
   {
-    src: process.env.PUBLIC_URL + "/images/hero/signage.webp",
+    desktop: baseUrl + "/images/hero/signage.webp",
+    mobile: baseUrl + "/images/hero/signage-mobile.webp",
     alt: 'Corlican Pet Motel Boarding Kennels signage',
     caption: 'Professional Pet Boarding Services'
   }
@@ -46,9 +51,15 @@ export default function Hero() {
             className="absolute inset-0"
           >
             <img
-              src={images[currentImageIndex].src}
+              src={images[currentImageIndex].desktop}
+              srcSet={`${images[currentImageIndex].mobile} 800w, ${images[currentImageIndex].desktop} 1200w`}
+              sizes="100vw"
               alt={images[currentImageIndex].alt}
               className="object-cover object-center w-full h-full"
+              loading={currentImageIndex === 0 ? "eager" : "lazy"}
+              decoding="async"
+              width="1200"
+              height="675"
             />
             <div className="absolute inset-0 bg-black/30" />
           </motion.div>

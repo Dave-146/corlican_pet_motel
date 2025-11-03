@@ -10,6 +10,7 @@ export default function ServiceCard({
   features,
   images,
   mainImage,
+  mainImageMobile,
   prices,
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -41,8 +42,14 @@ export default function ServiceCard({
         <div className="relative h-80">
           <img
             src={mainImage}
+            srcSet={`${mainImageMobile || mainImage} 800w, ${mainImage} 1200w`}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
             alt={title}
             className="object-cover object-center w-full h-full"
+            loading="lazy"
+            decoding="async"
+            width="1200"
+            height="675"
           />
         </div>
         <div className="p-6">
@@ -107,9 +114,15 @@ export default function ServiceCard({
                     className="absolute inset-0"
                   >
                     <img
-                      src={images[currentImageIndex].src}
+                      src={images[currentImageIndex].desktop || images[currentImageIndex].src}
+                      srcSet={`${images[currentImageIndex].mobile || images[currentImageIndex].desktop || images[currentImageIndex].src} 800w, ${images[currentImageIndex].desktop || images[currentImageIndex].src} 1200w`}
+                      sizes="(max-width: 768px) 100vw, 1200px"
                       alt={images[currentImageIndex].alt}
                       className="object-cover object-center w-full h-full"
+                      loading="lazy"
+                      decoding="async"
+                      width="1200"
+                      height="675"
                     />
                   </motion.div>
                 </AnimatePresence>

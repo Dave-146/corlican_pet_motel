@@ -1,10 +1,8 @@
 # Corlican Pet Motel
 
-Premium Pet Boarding Website
+Pet Boarding
 
----
-
-Welcome to the Corlican Pet Motel website! This is a modern, responsive web application for a purpose-built pet boarding facility, providing information about our services, features, and contact details for pet owners.
+Welcome to the Corlican Pet Motel website! This is a modern, responsive website for a purpose-built pet boarding kennels, providing information about our services, features, and contact details for pet owners.
 
 ## Features
 
@@ -20,11 +18,8 @@ Welcome to the Corlican Pet Motel website! This is a modern, responsive web appl
 
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
 - [EmailJS](https://www.emailjs.com/) (for contact form)
 - [GitHub Pages](https://pages.github.com/) (for deployment)
-
-
 
 © Corlican Pet Motel. All rights reserved.
 

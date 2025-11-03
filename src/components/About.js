@@ -2,22 +2,28 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
+const baseUrl = process.env.PUBLIC_URL || '';
+
 const images = [
   {
-    src: process.env.PUBLIC_URL + "/images/hero/entrance-mural.webp",
+    desktop: baseUrl + "/images/hero/entrance-mural.webp",
+    mobile: baseUrl + "/images/hero/entrance-mural-mobile.webp",
     alt: "Corlican Pet Motel entrance with charming mural featuring pets and trees",
     caption: "Welcome to Corlican Pet Motel"
   },
   {
-    src: process.env.PUBLIC_URL + "/images/about/about-1.webp",
+    desktop: baseUrl + "/images/about/about-1.webp",
+    mobile: baseUrl + "/images/about/about-1-mobile.webp",
     alt: "Corlican Pet Motel exterior"
   },
   {
-    src: process.env.PUBLIC_URL + "/images/about/about-2.webp",
+    desktop: baseUrl + "/images/about/about-2.webp",
+    mobile: baseUrl + "/images/about/about-2-mobile.webp",
     alt: "Pet play area"
   },
   {
-    src: process.env.PUBLIC_URL + "/images/about/about-3.webp",
+    desktop: baseUrl + "/images/about/about-3.webp",
+    mobile: baseUrl + "/images/about/about-3-mobile.webp",
     alt: "Staff with pets"
   }
 ];
@@ -84,9 +90,15 @@ export default function About() {
                 className="absolute inset-0"
               >
                 <img
-                  src={images[currentImageIndex].src}
+                  src={images[currentImageIndex].desktop}
+                  srcSet={`${images[currentImageIndex].mobile} 800w, ${images[currentImageIndex].desktop} 1200w`}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   alt={images[currentImageIndex].alt}
                   className="object-cover object-center w-full h-full"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="675"
                 />
               </motion.div>
             </AnimatePresence>
