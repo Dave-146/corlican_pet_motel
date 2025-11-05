@@ -7,24 +7,14 @@
     <meta name="theme-color" content="#ffffff" />
     <meta
       name="description"
-      content="Corlican Pet Motel - Premier pet boarding kennel in Wexford, Ireland. Dog & cat boarding from €12/night. Spacious runs, 24/7 vet access, family-owned since 2006. Book your pet's stay today!"
+      content="Corlican Pet Motel -  Pet boarding in Wexford, Ireland. Dog & cat boarding from €12/night. Spacious runs, 24/7 vet access, family-owned since 2006."
     />
     <link rel="canonical" href="https://www.corlicanpetmotel.ie/" />
     
-    <!-- Preload critical hero images FIRST - before other resources -->
+    <!-- Preload ONLY the first critical hero image -->
     <link rel="preload" href="%PUBLIC_URL%/images/hero/entrance-mural.webp" as="image" fetchpriority="high" type="image/webp" media="(min-width: 769px)">
     <link rel="preload" href="%PUBLIC_URL%/images/hero/entrance-mural-mobile.webp" as="image" fetchpriority="high" type="image/webp" media="(max-width: 768px)">
-    <link rel="preload" href="%PUBLIC_URL%/images/hero/kennels-view.webp" as="image" type="image/webp" media="(min-width: 769px)">
-    <link rel="preload" href="%PUBLIC_URL%/images/hero/kennels-view-mobile.webp" as="image" type="image/webp" media="(max-width: 768px)">
-    <link rel="preload" href="%PUBLIC_URL%/images/hero/signage.webp" as="image" type="image/webp" media="(min-width: 769px)">
-    <link rel="preload" href="%PUBLIC_URL%/images/hero/signage-mobile.webp" as="image" type="image/webp" media="(max-width: 768px)">
     <link rel="preload" href="%PUBLIC_URL%/logo.svg" as="image" fetchpriority="high" type="image/svg+xml">
-    
-    <!-- Preload above-the-fold service images -->
-    <link rel="preload" href="%PUBLIC_URL%/images/services/Dog_1.webp" as="image" type="image/webp" media="(min-width: 769px)">
-    <link rel="preload" href="%PUBLIC_URL%/images/services/Dog_1-mobile.webp" as="image" type="image/webp" media="(max-width: 768px)">
-    <link rel="preload" href="%PUBLIC_URL%/images/services/Cat_1.webp" as="image" type="image/webp" media="(min-width: 769px)">
-    <link rel="preload" href="%PUBLIC_URL%/images/services/Cat_1-mobile.webp" as="image" type="image/webp" media="(max-width: 768px)">
     
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
@@ -34,21 +24,22 @@
       "name": "Corlican Pet Motel",
       "description": "Premium pet boarding services in Wexford, Ireland. Spacious accommodations, 24/7 vet access, and loving care for dogs and cats.",
       "url": "https://www.corlicanpetmotel.ie",
-      "telephone": "+353-53-9123456",
+      "telephone": ["+353-86-223-2100", "+353-86-355-1132"],
       "email": "corlicanpetmotel@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Corlican",
-        "addressLocality": "Wexford",
+        "streetAddress": "Corlican, Killurin",
+        "addressLocality": "Enniscorthy",
         "addressRegion": "County Wexford",
+        "postalCode": "Y21 T6X5",
         "addressCountry": "IE"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "52.3361",
-        "longitude": "-6.4633"
+        "latitude": "52.393214266681404",
+        "longitude": "-6.605353699679743"
       },
-      "openingHours": "Mo-Su 08:00-18:00",
+      "openingHours": ["Mo-Sa 09:00-18:00", "Su 12:00-18:00"],
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "paymentAccepted": "Cash, Credit Card",
@@ -92,11 +83,6 @@
           }
         ]
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "127"
-      },
       "image": [
         "https://www.corlicanpetmotel.ie/images/hero/entrance-mural.webp",
         "https://www.corlicanpetmotel.ie/images/hero/kennels-view.webp"
@@ -115,25 +101,98 @@
       "name": "Corlican Pet Motel",
       "url": "https://www.corlicanpetmotel.ie",
       "logo": "https://www.corlicanpetmotel.ie/logo.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+353-53-9123456",
-        "contactType": "Customer Service",
-        "email": "corlicanpetmotel@gmail.com",
-        "areaServed": "IE",
-        "availableLanguage": "English"
-      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+353-86-223-2100",
+          "contactType": "Customer Service",
+          "email": "corlicanpetmotel@gmail.com",
+          "areaServed": "IE",
+          "availableLanguage": "English"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+353-86-355-1132",
+          "contactType": "Customer Service",
+          "email": "corlicanpetmotel@gmail.com",
+          "areaServed": "IE",
+          "availableLanguage": "English"
+        }
+      ],
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Corlican",
-        "addressLocality": "Wexford",
+        "streetAddress": "Corlican, Killurin",
+        "addressLocality": "Enniscorthy",
         "addressRegion": "County Wexford",
+        "postalCode": "Y21 T6X5",
         "addressCountry": "IE"
       },
       "sameAs": [
         "https://www.facebook.com/corlicanpetmotel"
       ],
-      "foundingDate": "2006"
+      "foundingDate": "2006",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "51",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    
+    <!-- LocalBusiness Schema with Rating Support -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Corlican Pet Motel",
+      "image": "https://www.corlicanpetmotel.ie/images/hero/entrance-mural.webp",
+      "@id": "https://www.corlicanpetmotel.ie",
+      "url": "https://www.corlicanpetmotel.ie",
+      "telephone": ["+353-86-223-2100", "+353-86-355-1132"],
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Corlican, Killurin",
+        "addressLocality": "Enniscorthy",
+        "addressRegion": "County Wexford",
+        "postalCode": "Y21 T6X5",
+        "addressCountry": "IE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "52.393214266681404",
+        "longitude": "-6.605353699679743"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "12:00",
+          "closes": "18:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "51",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
     }
     </script>
     
@@ -293,13 +352,14 @@
     <!-- Local Business Schema -->
     <meta name="geo.region" content="IE-WX" />
     <meta name="geo.placename" content="Wexford" />
-    <meta name="geo.position" content="52.3361;-6.4633" />
-    <meta name="ICBM" content="52.3361, -6.4633" />
+    <meta name="geo.position" content="52.393214266681404;-6.605353699679743" />
+    <meta name="ICBM" content="52.393214266681404, -6.605353699679743" />
     
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=optional" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
     
     <!-- DNS prefetch for external domains -->
     <link rel="dns-prefetch" href="//www.google-analytics.com">
@@ -319,7 +379,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Corlican Pet Motel - Premium Pet Boarding Services in Wexford, Ireland</title>
+    <title>Corlican Pet Motel - Pet Boarding Kennels in Wexford</title>
     
     <!-- Google Analytics - Deferred for better performance -->
     <script defer src="https://www.googletagmanager.com/gtag/js?id=%REACT_APP_GA_MEASUREMENT_ID%"></script>

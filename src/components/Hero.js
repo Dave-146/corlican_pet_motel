@@ -28,9 +28,8 @@ export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Preload all hero images immediately for smooth carousel transitions
-  // This runs as early as possible, even before React fully renders
+  // Load immediately without delay for better LCP
   useEffect(() => {
-    // Use requestIdleCallback if available, otherwise load immediately
     const preloadImages = () => {
       images.forEach((img) => {
         // Preload desktop version
@@ -45,12 +44,8 @@ export default function Hero() {
       });
     };
     
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(preloadImages, { timeout: 2000 });
-    } else {
-      // Fallback for browsers without requestIdleCallback
-      setTimeout(preloadImages, 0);
-    }
+    // Load immediately - no delay for better performance
+    preloadImages();
   }, []);
 
   useEffect(() => {
@@ -77,7 +72,7 @@ export default function Hero() {
             className="absolute inset-0"
           >
             <img
-              src={images[currentImageIndex].desktop}
+              src={images[currentImageIndex].mobile}
               srcSet={`${images[currentImageIndex].mobile} 800w, ${images[currentImageIndex].desktop} 1200w`}
               sizes="100vw"
               alt={images[currentImageIndex].alt}
